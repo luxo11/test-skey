@@ -7,6 +7,10 @@ app.use(bodyParser.json());
 app.get('/', (req, res) =>{
     res.status(200).json({status: 'ok'})
 })
+app.listen(process.env.PORT || 5000, async () => {
+    console.log('App runnin');
+})
+
 
 let counter = Math.floor(Math.random() * 10000000) + 1;
 
