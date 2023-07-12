@@ -1,4 +1,10 @@
 import fetch from 'node-fetch';
+import express from 'express';
+
+const app = express();
+app.get('/', (req, res) =>{
+    res.status(200).json({status: 'ok'})
+})
 
 let counter = 1;
 
