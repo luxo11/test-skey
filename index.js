@@ -19,6 +19,7 @@ let makeRequest = async () => {
 	})
 
 	if(response.ok) {
+        console.log('resposne ok')
 		counter++;
 		makeRequest()
 	}
