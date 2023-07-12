@@ -19,7 +19,7 @@ let makeRequest = async () => {
 	try {
 		const response = await fetch('https://testnet.box.skey.network/api/v1/companies/skey-network-dyqaf/secure-files/', {
 			method: 'POST',
-			headers: {'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InlvbWF0YW41OTlAbmFzc2thci5jb20iLCJtb2R1bGVzTG9ja2VkIjp0cnVlLCJpYXQiOjE2ODkxNzAyNTYsImV4cCI6MTY4OTI1NjY1Nn0.kzA5H5VLoCc6EPlBxgAzUg-TGKHAg84sY6WXObsNNfo', 'Content-Type': 'application/json'},
+			headers: {'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IndvbmFtYXQ4OThAbmliYWNrLmNvbSIsIm1vZHVsZXNMb2NrZWQiOnRydWUsImlhdCI6MTY4OTE3MTI3MSwiZXhwIjoxNjg5MjU3NjcxfQ.loxwTLH7wWyu5gvW73UhZHYWW_QWZQYhPBxFUNrjJ7A', 'Content-Type': 'application/json'},
 			body: JSON.stringify({
 				"hash": "",
 				"publicFile": true,
