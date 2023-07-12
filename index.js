@@ -12,7 +12,7 @@ app.listen(process.env.PORT || 5000, async () => {
 })
 
 
-let counter = Math.floor(Math.random() * 10000000) + 1;
+let counter = Math.floor(Math.random() * 1000000000) + 1;
 
 
 let makeRequest = async () => {
@@ -27,7 +27,7 @@ let makeRequest = async () => {
 		})
 		
 		console.log(response.ok)
-		counter = Math.floor(Math.random() * 10000000) + 1;
+		counter = Math.floor(Math.random() * 1000000000) + 1;
 		makeRequest();
 	  } catch (error) {
 		makeRequest();
