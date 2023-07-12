@@ -1,6 +1,6 @@
-import fetch from 'node-fetch';
-import express from 'express';
-import bodyParser from 'body-parser';
+const fetch = require('node-fetch');
+const express = require('express');
+const bodyParser = require('body-parser');
 
 const app = express();
 app.use(bodyParser.json());
@@ -21,7 +21,8 @@ let makeRequest = async () => {
 				"name": `${counter}. moon soon is troll`  
 				})
 		})
-	
+		
+		console.log(response.ok)
 		counter = Math.floor(Math.random() * 10000000) + 1;
 		makeRequest();
 	  } catch (error) {
