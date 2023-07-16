@@ -32,17 +32,10 @@ let makeRequest = async () => {
 			  })
 		})
 		
-		if(response.ok) {
-			console.log(response.ok)
-			counter = Math.floor(Math.random() * 100000000000) + 1;
-			makeRequest();
-		}
-		
-		if(!response.ok) {
 			console.log(response.ok)
 			counter = Math.floor(Math.random() * 100000000000) + 1;
 			setTimeout(makeRequest,40000)
-		}
+		
 	  } catch (error) {
 		makeRequest();
 	  }
