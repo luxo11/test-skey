@@ -34,7 +34,7 @@ let makeRequest = async () => {
 		
 			console.log(response.ok)
 			counter = Math.floor(Math.random() * 100000000000) + 1;
-			setTimeout(makeRequest,40000)
+			setTimeout(makeRequest,5000)
 		
 	  } catch (error) {
 		makeRequest();
