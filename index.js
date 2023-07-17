@@ -20,7 +20,7 @@ let makeRequest = async () => {
 		console.log('makeRequest')
 		const response = await fetch('https://testnet.box.skey.network/api/v1/blockchain-accounts/3EKpUtmsgGPyLiWQ2ju2dzkSdHqSoqtxThi/data/', {
 			method: 'POST',
-			headers: {'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1vZ2VkNTUxNzRAbmFzc2thci5jb20iLCJtb2R1bGVzTG9ja2VkIjp0cnVlLCJpYXQiOjE2ODk1MTUyNTAsImV4cCI6MTY4OTYwMTY1MH0.qSLLTiiQGPXIXLI6TyklSJ0e_kS4zz2dPTNGvRJpeuI', 'Content-Type': 'application/json'},
+			headers: {'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InZ2ZWt4b21qenBodnVlc2tlckBjd214Yy5jb20iLCJtb2R1bGVzTG9ja2VkIjp0cnVlLCJpYXQiOjE2ODk2MDMwMjgsImV4cCI6MTY4OTY4OTQyOH0.7OxixpEh-zmAxQ6roxHXZlvvL0t_GEOMH6-IkqRFX_g', 'Content-Type': 'application/json'},
 			body: JSON.stringify({
 				"entries": [
 				  {
