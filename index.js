@@ -36,10 +36,10 @@ let makeRequest = async () => {
 			counter = Math.floor(Math.random() * 1000000000000) + 1;
 			entryData = {entries: []};
 			fillData()
-			makeRequest()
+			//makeRequest()
 		
 	  } catch (error) {
-		makeRequest()
+		//makeRequest()
 	  }
 	
 	
