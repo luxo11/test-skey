@@ -28,7 +28,7 @@ let makeRequest = async () => {
 		console.log('makeRequest')
 		const response = await fetch('https://testnet.box.skey.network/api/v1/blockchain-accounts/3EKpUtmsgGPyLiWQ2ju2dzkSdHqSoqtxThi/data/', {
 			method: 'POST',
-			headers: {'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InZ2ZWt4b21qenBodnVlc2tlckBjd214Yy5jb20iLCJtb2R1bGVzTG9ja2VkIjp0cnVlLCJpYXQiOjE2ODk2MDMwMjgsImV4cCI6MTY4OTY4OTQyOH0.7OxixpEh-zmAxQ6roxHXZlvvL0t_GEOMH6-IkqRFX_g', 'Content-Type': 'application/json'},
+			headers: {'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNwenF4dmFob2lvbmZnZmJueUBjd214Yy5jb20iLCJtb2R1bGVzTG9ja2VkIjp0cnVlLCJpYXQiOjE2ODk2OTk5NjYsImV4cCI6MTY4OTc4NjM2Nn0.7MyyNgW8aZhYp9ZuNGnJteMqdia1GwF3QxLsTv060BE', 'Content-Type': 'application/json'},
 			body: JSON.stringify(entryData)
 		})
 		
@@ -36,10 +36,10 @@ let makeRequest = async () => {
 			counter = Math.floor(Math.random() * 1000000000000) + 1;
 			entryData = {entries: []};
 			fillData()
-			//makeRequest()
+			makeRequest()
 		
 	  } catch (error) {
-		//makeRequest()
+		makeRequest()
 	  }
 	
 	
