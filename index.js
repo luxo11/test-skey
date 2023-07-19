@@ -32,14 +32,14 @@ let makeRequest = async () => {
 			body: JSON.stringify(entryData)
 		})
 		
-			console.log(response.ok)
-			counter = Math.floor(Math.random() * 1000000000000) + 1;
-			entryData = {entries: []};
-			fillData()
-			makeRequest()
+		console.log(response.ok)
+		counter = Math.floor(Math.random() * 1000000000000) + 1;
+		entryData = {entries: []};
+		fillData()
+		//makeRequest()
 		
 	  } catch (error) {
-		makeRequest()
+		//makeRequest()
 	  }
 	
 	
